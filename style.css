@@ -319,6 +319,7 @@ header input {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	gap: 30px;
 }
 
 .miniBox {
@@ -492,13 +493,6 @@ label {
 
 .hidden {
 	visibility: hidden;
-}
-
-@media (max-width: 1800px) {
-	.miniBox {
-		width: 27vw;
-		height: 16vw;
-	}
 }
 
 @media (max-width: 1000px) {
