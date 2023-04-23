@@ -459,6 +459,10 @@ label {
 	margin-bottom: 30px;
 }
 
+.contact-left textarea {
+	resize: none;
+}
+
 .contact-right h1 {
 	text-align: center;
 	margin-bottom: 20px;
@@ -488,6 +492,13 @@ label {
 
 .hidden {
 	visibility: hidden;
+}
+
+@media (max-width: 1800px) {
+	.miniBox {
+		width: 27vw;
+		height: 16vw;
+	}
 }
 
 @media (max-width: 1000px) {
