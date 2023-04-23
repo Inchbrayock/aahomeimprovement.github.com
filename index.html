@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>A.A Home Improvement</title>
+		<link href="style.css" rel="stylesheet" type="text/css" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+	</head>
+
+	<body>
+		<header>
+			<img src="logoFinalV2.png" alt="" />
+			<div class="headerItems">
+				<p>ABOUT ME</p>
+				<p>MY PORTFOLIO</p>
+				<p>CONTACT ME</p>
+			</div>
+			<input type="checkbox" id="active" />
+			<label for="active" class="menu-btn"><i class="fa fa-bars"></i></label>
+			<div class="wrapper">
+				<ul class="menu">
+					<li><a href="">HOME</a></li>
+					<li><a href="">ABOUT</a></li>
+					<li><a href="">SERVICES</a></li>
+				</ul>
+			</div>
+		</header>
+		<div id="fadeIn" class="backgroundContainer">
+			<h1 class="typingText">
+				I can improve your <span class="element"></span>
+			</h1>
+			<div class="centreButtons">
+				<button onclick="scrollToAboutMe()">ABOUT ME</button>
+				<button onclick="scrollToContactMe()">CONTACT ME</button>
+			</div>
+		</div>
+
+		<div class="swiper mySwiper">
+			<div class="swiper-wrapper">
+				<div
+					class="swiper-slide"
+					id="photo"
+					style="
+						background-image: linear-gradient(
+								rgba(0, 0, 0, 0.5),
+								rgba(0, 0, 0, 0.5)
+							),
+							url('livingRoom1.jpg');
+					"
+				></div>
+				<div
+					class="swiper-slide"
+					id="photo"
+					style="
+						background-image: linear-gradient(
+								to top,
+								rgba(0, 0, 0, 0.5),
+								rgba(0, 0, 0, 0.5)
+							),
+							url('livingRoom2.jpg');
+					"
+				></div>
+				<div
+					class="swiper-slide"
+					id="photo"
+					style="
+						background-image: linear-gradient(
+								to top,
+								rgba(0, 0, 0, 0.5),
+								rgba(0, 0, 0, 0.5)
+							),
+							url('bathroom1.jpg');
+					"
+				></div>
+			</div>
+		</div>
+
+		<div id="slide-in" class="aboutMe">
+			<div class="box">
+				<img src="andre.png" alt="" />
+				<div>
+					<h1>ABOUT ME</h1>
+					<br />
+					<p>
+						Hi there, I'm Andre, your local handyman! With over 5 years of
+						experience in the industry, I've honed my skills in various home
+						repair and maintenance services. From fixing leaky faucets to
+						installing new light fixtures, I've tackled all kinds of household
+						problems and provided quick and effective solutions to my clients.
+					</p>
+					<br />
+					<p>
+						I take pride in my work and always strive to provide high-quality
+						services at affordable prices. I believe in building long-term
+						relationships with my clients and ensuring their satisfaction with
+						every job I do. My attention to detail and commitment to excellence
+						are what set me apart from other handymen.
+					</p>
+					<br />
+					<p>
+						So whether you need help with small repairs or major renovations,
+						don't hesitate to reach out to me. I'm always ready to lend a hand
+						and make your home a better place to live in.
+					</p>
+					<br />
+					<button>MY WORK</button>
+				</div>
+			</div>
+		</div>
+
+		<div id="slide-in" class="offer">
+			<h1>WHAT I OFFER</h1>
+			<div class="offerBox">
+				<div class="miniBox">
+					<img src="electrics.png" alt="" />
+					<h2>electrics</h2>
+					<p>
+						I can help replace the electrics in your house wether it be a simple
+						light bulb replacement to a rewire!
+					</p>
+				</div>
+				<div class="miniBox">
+					<img src="plumving.png" alt="" />
+					<h2>plumbing</h2>
+					<p>
+						I can help replace the electrics in your house wether it be a simple
+						light bulb replacement to a rewire!
+					</p>
+				</div>
+				<div class="miniBox">
+					<img src="electrics.png" alt="" />
+
+					<h2>electrics</h2>
+					<p>
+						I can help replace the electrics in your house wether it be a simple
+						light bulb replacement to a rewire!
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div id="slide-in" class="container">
+			<div class="contact-box">
+				<div class="contact-left">
+					<h3>Send me a message</h3>
+					<form>
+						<div class="input-row">
+							<div class="input-group">
+								<label>Name</label>
+								<input type="text" placeholder="Joseph Sumner" />
+							</div>
+							<div class="input-group">
+								<label>Phone</label>
+								<input type="text" placeholder="+44 3213123123" />
+							</div>
+						</div>
+						<div class="input-row">
+							<div class="input-group">
+								<label>Email</label>
+								<input type="text" placeholder="JosephSumner@gmail.com" />
+							</div>
+							<div class="input-group">
+								<label>Subject</label>
+								<input type="text" placeholder="Product Demo" />
+							</div>
+						</div>
+
+						<label>Message</label>
+						<textarea rows="5" placeholder="Your Message"></textarea>
+						<button
+							type="submit
+						"
+						>
+							Send
+						</button>
+					</form>
+				</div>
+				<div class="contact-right">
+					<h1>CONTACT ME</h1>
+					<div class="contact-wrapper">
+						<img src="phone.png" alt="" />
+						<h3>Phone</h3>
+						<a href="tel:284783124"> <p>+44 01304367054</p> </a>
+						<br />
+						<img src="mail.png" alt="" />
+						<h3>Email</h3>
+						<a href="mailto:andreallen@gmail.com">
+							<p>info@aahomeimprovements.com</p>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+		<script>
+			var typed = new Typed(".element", {
+				strings: ["living room.", "bathroom.", "living room."],
+				typeSpeed: 60,
+				backSpeed: 60,
+				backDelay: 2000,
+				loop: true,
+				onStringTyped: function (arrayPos) {
+					setTimeout;
+					swiper.slideNext(); // switch to the next slide
+					console.log("Done typing string " + (arrayPos + 1));
+				},
+				onComplete: function () {
+					swiper.slideTo(0); // reset the slider back to the first slide
+				},
+			});
+		</script>
+
+		<!-- Swiper JS -->
+		<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+		<!-- Initialize Swiper -->
+		<script>
+			var swiper = new Swiper(".mySwiper", {
+				autoplay: {
+					delay: 3000,
+				},
+				speed: 1000, // Set the speed to 1000ms (1 second)
+			});
+		</script>
+		<script src="script.js"></script>
+	</body>
+</html>
