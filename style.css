@@ -14,6 +14,7 @@ header {
 	width: 100%;
 	padding: 1% 3%;
 	box-sizing: border-box;
+	transition: all 0.3s;
 }
 
 header.scroll {
@@ -26,6 +27,7 @@ header.scroll img {
 }
 
 header img {
+	transition: all 0.3s;
 	width: 300px;
 }
 
@@ -508,11 +510,31 @@ label {
 }
 
 @media (max-width: 600px) {
-	.aboutMeContent {
+	.contact-box {
+		flex-direction: column-reverse;
+	}
+	.contact-right {
+		border-radius: 20px 20px 0 0;
+	}
+
+	.offer {
+		margin-top: 330px;
+	}
+
+	.offer h1 {
+		font-size: 11vw;
+	}
+
+	.offerBox {
+		padding: 0% 0%;
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
+		justify-content: space-between;
 		align-items: center;
+	}
+
+	.miniBox {
+		width: 90vw;
 	}
 }
 
@@ -587,7 +609,7 @@ label {
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		height: 190vw;
+		height: 210vw;
 	}
 
 	.box img {
@@ -606,5 +628,17 @@ label {
 
 	.box p {
 		font-size: 3vw;
+	}
+
+	.box div {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.container {
+		margin-top: 100px;
+		height: 220vw;
 	}
 }
