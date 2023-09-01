@@ -16,23 +16,20 @@
 	</head>
 
 	<body>
-		<header>
-			<a href="index.html"> <img src="logoFinalV2.png" alt="" /> </a>
-			<div class="headerItems">
-				<p onclick="scrollToAboutMe()">ABOUT ME</p>
-				<p>MY PORTFOLIO</p>
-				<p onclick="scrollToContactMe()">CONTACT ME</p>
-			</div>
-			<input type="checkbox" id="active" />
-			<label for="active" class="menu-btn"><i class="fa fa-bars"></i></label>
-			<div class="wrapper">
-				<ul class="menu">
-					<li><a href="">HOME</a></li>
-					<li><a href="">ABOUT</a></li>
-					<li><a href="">SERVICES</a></li>
-				</ul>
-			</div>
+		<header class="header">
+			<a href="index.html">
+				<img class="logo" src="logoFinalV2.png" alt="" />
+			</a>
+			<button class="hamburger">
+				<div class="bar"></div>
+			</button>
 		</header>
+		<nav class="mobile-nav">
+			<a href="index.html">Home</a>
+			<a onclick="scrollToMyServices()">Services</a>
+			<a href="projects.html">Projects</a>
+			<a onclick="scrollToContactMe()">Contact</a>
+		</nav>
 		<div id="fadeIn" class="backgroundContainer">
 			<h1 class="typingText">
 				I can improve your <span class="element"></span>
@@ -50,8 +47,9 @@
 					id="photo"
 					style="
 						background-image: linear-gradient(
-								rgba(0, 0, 0, 0.5),
-								rgba(0, 0, 0, 0.5)
+								to bottom,
+								rgba(0, 0, 0, 0.75),
+								rgba(0, 0, 0, 0.75)
 							),
 							url('livingRoom1.jpg');
 					"
@@ -61,11 +59,11 @@
 					id="photo"
 					style="
 						background-image: linear-gradient(
-								to top,
-								rgba(0, 0, 0, 0.5),
-								rgba(0, 0, 0, 0.5)
+								to bottom,
+								rgba(0, 0, 0, 0.75),
+								rgba(0, 0, 0, 0.75)
 							),
-							url('livingRoom2.jpg');
+							url('livingroom2.jpg');
 					"
 				></div>
 				<div
@@ -73,9 +71,9 @@
 					id="photo"
 					style="
 						background-image: linear-gradient(
-								to top,
-								rgba(0, 0, 0, 0.5),
-								rgba(0, 0, 0, 0.5)
+								to bottom,
+								rgba(0, 0, 0, 0.75),
+								rgba(0, 0, 0, 0.75)
 							),
 							url('bathroom1.jpg');
 					"
@@ -85,7 +83,6 @@
 
 		<div id="slide-in" class="aboutMe">
 			<div class="box">
-				<img src="andre.png" alt="" />
 				<div>
 					<h1>ABOUT ME</h1>
 					<br />
@@ -111,8 +108,9 @@
 						and make your home a better place to live in.
 					</p>
 					<br />
-					<button>MY WORK</button>
 				</div>
+				<img src="andre.png" alt="" />
+
 			</div>
 		</div>
 
@@ -145,6 +143,8 @@
 					</p>
 				</div>
 			</div>
+
+			<div class="swiper mySwiper2"></div>
 		</div>
 
 		<div id="slide-in" class="container">
